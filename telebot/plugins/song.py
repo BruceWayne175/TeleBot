@@ -40,7 +40,7 @@ from telebot import CMD_HELP
 
 @telebot.on(admin_cmd(pattern="song (.*)"))
 async def download_video(tele):
-    x = await eor(tele, "Searching...")
+    x = await eor(tele, "Searching🔍...")
     url = tele.pattern_match.group(1)
     if not url:
         return await x.edit("**Error**\nUsage - `.song <song name>`")
@@ -51,9 +51,9 @@ async def download_video(tele):
     try:
         url = q[0]["link"]
     except BaseException:
-        return await x.edit("`No matching song found...`")
+        return await x.edit("`No matching song found☹️...`")
     type = "audio"
-    await x.edit(f"`Preparing to download {url}...`")
+    await x.edit(f"`Preparing to download⬇️ {url}...`")
     if type == "audio":
         opts = {
             "format": "bestaudio",
@@ -124,7 +124,7 @@ By - {}
         tele.chat_id,
         f"{rip_data['id']}.mp3",
         supports_streaming=True,
-        caption=f"⫸ Song - {rip_data['title']}\n⫸ By - {rip_data['uploader']}\n",
+        caption=f"🎶 Song - {rip_data['title']}\n👨‍🎤 By - {rip_data['uploader']}\n",
         attributes=[
             DocumentAttributeAudio(
                 duration=int(rip_data["duration"]),
@@ -149,9 +149,9 @@ async def download_video(tele):
     try:
         url = q[0]["link"]
     except BaseException:
-        return await x.edit("`No matching songs found...`")
+        return await x.edit("`No matching songs found☹️...`")
     type = "audio"
-    await x.edit("`Preparing to download...`")
+    await x.edit("`Preparing to download⬇️...`")
     if type == "audio":
         opts = {
             "format": "best",
@@ -168,7 +168,7 @@ async def download_video(tele):
             "quiet": True,
         }
     try:
-        await x.edit("`Fetching data, please wait..`")
+        await x.edit("`Fetching data, please wait😜..`")
         with YoutubeDL(opts) as rip:
             rip_data = rip.extract_info(url)
     except DownloadError as DE:
@@ -217,7 +217,7 @@ By - {}
         tele.chat_id,
         f"{rip_data['id']}.mp4",
         supports_streaming=True,
-        caption=f"⫸ Song - {rip_data['title']}\n⫸ By - {rip_data['uploader']}\n",
+        caption=f"🎶 song - {rip_data['title']}\n👨‍🎤 By - {rip_data['uploader']}\n",
     )
     os.remove(f"{rip_data['id']}.mp4")
     await x.delete()
