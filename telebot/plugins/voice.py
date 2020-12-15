@@ -9,11 +9,11 @@ from datetime import datetime
 
 from gtts import gTTS
 
-from fridaybot import CMD_HELP
-from fridaybot.utils import friday_on_cmd
+from telebot import CMD_HELP
+from telebot.utils import telebot_on_cmd
 
 
-@friday.on(friday_on_cmd(pattern="voice (.*)"))
+@telebot.on(telebot_on_cmd(pattern="voice (.*)"))
 async def _(event):
     if event.fwd_from:
         return
