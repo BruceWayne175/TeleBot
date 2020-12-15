@@ -113,9 +113,9 @@ async def download_video(tele):
     except BaseException:
         pass
     upteload = """
-Uploading...
-Song name - {}
-By - {}
+⬆️Uploading...
+🎶Song name - {}
+👨‍🎤By - {}
 """.format(
         rip_data["title"], rip_data["uploader"]
     )
@@ -206,9 +206,9 @@ async def download_video(tele):
     except BaseException:
         pass
     upteload = """
-Uploading...
-Song name - {}
-By - {}
+⬆️Uploading...
+🎶Song name - {}
+👨‍🎤By - {}
 """.format(
         rip_data["title"], rip_data["uploader"]
     )
