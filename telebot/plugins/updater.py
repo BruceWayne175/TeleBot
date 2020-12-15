@@ -24,8 +24,8 @@ requirements_path = path.join(
 
 HEROKU_API_KEY = Var.HEROKU_API_KEY
 HEROKU_APP_NAME = Var.HEROKU_APP_NAME
-GIT_REPO_NAME = "TeleBot"
-UPSTREAM_REPO_URL = "https://github.com/xditya/TeleBot"
+GIT_REPO_NAME = "Bruce's Bot"
+UPSTREAM_REPO_URL = "https://github.com/BruceWayne175/TeleBot"
 
 xxxx = CMD_HNDLR if CMD_HNDLR else "."
 
