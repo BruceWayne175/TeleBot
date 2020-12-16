@@ -48,7 +48,7 @@ async def _(event):
         await event.delete()
         msg = await bot.forward_messages(event.chat_id, respond.message)
         await msg.edit(
-            f"Song name - __{link}__\nUploaded by [TeleBot](https://t.me/TeleBotSupport)"
+            f"Song name - __{link}__\nUploaded by [Bruce Wayne](https://t.me/BruceSL)"
         )
 
 
@@ -80,7 +80,7 @@ async def WooMai(netase):
         conv.chat_id, [msg.id, response.id, respond.id]
     )
     await msg.edit(
-        f"Song name - __{link}__\nUploaded by [TeleBot](https://t.me/TeleBotSupport)"
+        f"Song name - __{link}__\nUploaded by [Bruce Wayne](https://t.me/BruceSL)"
     )
     await netase.delete()
 
@@ -114,7 +114,7 @@ async def DeezLoader(Deezlod):
             conv.chat_id, [msg_start.id, response.id, r.id, msg.id, details.id, song.id]
         )
         await msg.edit(
-            f"Song name - __{d_link}__\nUploaded by [TeleBot](https://t.me/TeleBotSupport)"
+            f"Song name - __{d_link}__\nUploaded by [Bruce Wayne](https://t.me/BruceSL)"
         )
         await Deezlod.delete()
 
