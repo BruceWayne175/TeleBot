@@ -38,11 +38,11 @@ async def _(event):
         translated = translator.translate(text, dest=lan)
         after_tr_text = translated.text
         output_str = """
-**Tʀᴀɴsʟᴀᴛɪᴏɴ**
+**👨‍🎤Translated By @BruceSL**
 
-**{} ➟ {}**
+**🌍{} ➟ {}**
 
-`{}`""".format(
+`🌐{}`""".format(
             translated.src, lan, after_tr_text
         )
         await x.edit(output_str)
