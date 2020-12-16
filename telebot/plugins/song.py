@@ -115,7 +115,7 @@ async def download_video(tele):
     upteload = """
 ⬆️Uploading...
 🎶Song name - {}
-👨‍🎤By @BruceSL - {}
+👨‍🎤By 🇧 🇷 🇺 🇨 🇪  🇼 🇦 🇾 🇳 🇪
 """.format(
         rip_data["title"], rip_data["uploader"]
     )
@@ -124,7 +124,7 @@ async def download_video(tele):
         tele.chat_id,
         f"{rip_data['id']}.mp3",
         supports_streaming=True,
-        caption=f"🎶 Song - {rip_data['title']}\n👨‍🎤 By @BruceSL - {rip_data['uploader']}\n",
+        caption=f"🎶 Song - {rip_data['title']}\n👨‍🎤 By [🇧 🇷 🇺 🇨 🇪  🇼 🇦 🇾 🇳 🇪](t.me/BruceSL)\n",
         attributes=[
             DocumentAttributeAudio(
                 duration=int(rip_data["duration"]),
@@ -208,7 +208,7 @@ async def download_video(tele):
     upteload = """
 ⬆️Uploading...
 🎶Song name - {}
-👨‍🎤By @BruceSL - {}
+👨‍🎤By 🇧 🇷 🇺 🇨 🇪  🇼 🇦 🇾 🇳 🇪
 """.format(
         rip_data["title"], rip_data["uploader"]
     )
@@ -217,7 +217,7 @@ async def download_video(tele):
         tele.chat_id,
         f"{rip_data['id']}.mp4",
         supports_streaming=True,
-        caption=f"🎶 song - {rip_data['title']}\n👨‍🎤 By @BruceSL - {rip_data['uploader']}\n",
+        caption=f"🎶 song - {rip_data['title']}\n👨‍🎤 By [🇧 🇷 🇺 🇨 🇪  🇼 🇦 🇾 🇳 🇪](t.me/BruceSL)\n",
     )
     os.remove(f"{rip_data['id']}.mp4")
     await x.delete()
