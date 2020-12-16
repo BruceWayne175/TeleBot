@@ -38,7 +38,7 @@ async def _(event):
         translated = translator.translate(text, dest=lan)
         after_tr_text = translated.text
         output_str = """
-**👨‍🎤Translated By @BruceSL**
+**👨‍🎤Translated By [💛 🇧 🇷 🇺 🇨 🇪  🇱🇰💛](t.me/BruceSL)**
 
 **🌍{} ➟ {}**
 
