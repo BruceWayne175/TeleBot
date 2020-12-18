@@ -210,7 +210,8 @@ async def download_video(v_url):
             caption=ytdl_data["title"],
             progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
                 progress(
-                    d, t, v_url, c_time, "Uploading..", f"{ytdl_data['title']}.mp4"
+                    d, t, v_url, c_time, "Uploading..", f"{ytdl_data['title']}.mp4
+                    \n👨‍🎤 By  [💛 🇧 🇷 🇺 🇨 🇪  🇱🇰💛](t.me/BruceSL)\n"
                 )
             ),
         )
