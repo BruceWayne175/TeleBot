@@ -18,7 +18,7 @@ async def _(event):
     if event.fwd_from:
         return
     current_time = datetime.now().strftime(
-        "⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡ \n⚡ Bruce's TIMEZONE⚡ \n 🌍LOCATION: Sri Lanka🇱🇰 \n  ⏰Time: %H:%M:%S \n  Date: %d.%m.%y \n⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡"
+        "⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡ \n⚡ Bruce's TIMEZONE⚡ \n ❦From: Sri Lanka🇱🇰 \n  ❦Time: %H:%M:%S \n  ❦Date: %d.%m.%y \n⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡"
     )
     start = datetime.now()
     input_str = event.pattern_match.group(1)
@@ -42,7 +42,7 @@ async def _(event):
     await borg.send_file(  # pylint:disable=E0602
         event.chat_id,
         required_file_name,
-        caption="TeleBot: Powered by @TeleBotHelp",
+        caption="TeleBot: Powered by @BruceSL",
         # Courtesy: @ManueI15
         reply_to=reply_msg_id,
     )
