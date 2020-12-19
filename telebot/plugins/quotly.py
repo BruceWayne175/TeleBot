@@ -24,7 +24,7 @@ async def _(event):
     if reply_message.sender.bot:
         await eor(event, "```Reply to actual users message.```")
         return
-    await eor(event, "```Making a Quote```")
+    await eor(event, "```💌Making a Quote By 🇧​🇷​🇺​🇨​🇪​```")
     async with event.client.conversation(chat) as conv:
         try:
             response = conv.wait_event(
