@@ -36,8 +36,8 @@ async def _(event):
     current_chat = event.chat_id
     current_msg = event.id
     cap = """
-⫸ **Song name** - `{}`
-⫸ **Uploaded by** {}
+🎶 **Song name** - `{}`
+👨‍🎤 **Uploaded by** [💛 🇧 🇷 🇺 🇨 🇪  🇱🇰💛](t.me/BruceSL)
 """
     try:
         async for event in telebot.iter_messages(
