@@ -94,7 +94,7 @@ async def DeezLoader(Deezlod):
     if ".com" not in d_link:
         await Deezlod.edit("` I need a link to download something pro.`**(._.)**")
     else:
-        await Deezlod.edit("**Initiating Download!**")
+        await Deezlod.edit("**Here is the song you requested👇**")
     chat = "@DeezLoadBot"
     async with bot.conversation(chat) as conv:
         try:
