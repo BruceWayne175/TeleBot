@@ -23,7 +23,7 @@ async def _(event):
         as_document = True
     elif input_str == "text":
         as_text = True
-    await eor(event, "`Calculating my internet speed. Please wait!`")
+    await eor(event, "`🧮Calculating my internet speed. Please wait!`")
     start = datetime.now()
     s = speedtest.Speedtest()
     s.get_best_server()
@@ -47,13 +47,13 @@ async def _(event):
         if as_text:
             await eor(
                 event,
-                """`SpeedTest completed in {} seconds`
+                """`👨‍💻SpeedTest completed in {} seconds`
 
-`Download: {}`
-`Upload: {}`
-`Ping: {}`
-`Internet Service Provider: {}`
-`ISP Rating: {}`""".format(
+`⬇️Download: {}`
+`⬆️Upload: {}`
+`🏓Ping: {}`
+`🛰️Internet Service Provider: {}`
+`💫ISP Rating: {}`""".format(
                     ms,
                     convert_from_bytes(download_speed),
                     convert_from_bytes(upload_speed),
@@ -66,7 +66,7 @@ async def _(event):
             await borg.send_file(
                 event.chat_id,
                 speedtest_image,
-                caption="**SpeedTest** completed in {} seconds".format(ms),
+                caption="**👨‍🎤SpeedTest** completed in {} seconds".format(ms),
                 force_document=as_document,
                 reply_to=reply_msg_id,
                 allow_cache=False,
@@ -75,10 +75,10 @@ async def _(event):
     except Exception as exc:
         await eor(
             event,
-            """**SpeedTest** completed in {} seconds
-Download: {}
-Upload: {}
-Ping: {}
+            """**👨‍🎤SpeedTest** completed in {} seconds
+⬇️Download: {}
+⬆️Upload: {}
+🏓Ping: {}
 
 __With the Following ERRORs__
 {}""".format(
