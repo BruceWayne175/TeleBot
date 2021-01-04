@@ -85,7 +85,7 @@ async def start_all(event):
                                   caption=startotherena,
                                   buttons=[
                                       [Button.url(
-                                          "BruceSL's Bot", url="https://github.com/BruceWayne175/TeleBot")],
+                                          "BruceSL's Bot", url="https://t.me/BruceSL")],
                                       [Button.inline(
                                           "Whats this?", data="telebot")]
                                   ]
@@ -95,7 +95,7 @@ async def start_all(event):
                                      startotherena,
                                      buttons=[
                                          [Button.url(
-                                             "BruceSL's Bot", url="https://github.com/BruceWayne175/TeleBot")],
+                                             "BruceSL's Bot", url="https://t.me/BruceSL")],
                                          [Button.inline(
                                              "Whats this?", data="telebot")]
                                      ]
@@ -181,8 +181,6 @@ async def settings(event):
 async def settings(event):
     await event.edit("Browse through the available options:",
                      buttons=[
-                         [(Button.url("Repository", url="https://github.com/BruceWayne175/TeleBot")),
-                          (Button.url("Deploy", url="https://heroku.com/deploy?template=https://github.com/BruceWayne175/TeleBot"))],
                          [Button.url("💜 Support 💜",
                                      url="https://t.me/BruceSL")]
                      ])
