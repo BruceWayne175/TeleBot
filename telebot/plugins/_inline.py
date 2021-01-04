@@ -94,11 +94,11 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 text=f"**TeleBot Stats For [{DEFAULTUSER}](tg://user?id={myid})**\n\n__Bot is functioning normally, master!__\n\n(c) @BruceSL",
                 buttons=[
                     [custom.Button.inline("Stats", data="statcheck")],
-                    [Button.url("Repo", "https://github.com/BruceWayne175/TeleBot")],
+                    [Button.url("Don't Click", "https://t.me/BruceSL")],
                     [
                         Button.url(
-                            "Deploy Now!",
-                            "https://heroku.com/deploy?template=https://github.com/BruceWayne175/TeleBot",
+                            "😂😂😂",
+                            "https://heroku.com/deploy?template=https://t.me/BruceSL",
                         )
                     ],
                 ],
@@ -123,10 +123,10 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 text=f"TeleBot - Telegram Userbot.",
                 buttons=[
                     [
-                        Button.url("Repo", "https://github.com/BruceWayne175/TeleBot"),
+                        Button.url("Don't Click", "https://t.me/BruceSL"),
                         Button.url(
-                            "Deploy",
-                            "https://heroku.com/deploy?template=https://github.com/BruceWayne175/TeleBot",
+                            "😂😂😂",
+                            "https://t.me/BruceSL",
                         ),
                     ],
                     [Button.url("💜Support💜", "https://t.me/BruceSL")],
@@ -140,11 +140,11 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                     [custom.Button.url("❤️Creator👨‍🎤", "https://t.me/BruceSL")],
                     [
                         custom.Button.url(
-                            "👨‍💻 Source Code 🧩", "https://github.com/BruceWayne175/TeleBot"
+                            "👨‍💻 Profile 🧩", "https://t.me/BruceSL"
                         ),
                         custom.Button.url(
-                            "Deploy 🌀",
-                            "https://heroku.com/deploy?template=https://github.com/BruceWayne175/TeleBot",
+                            "Help 🌀",
+                            "https://t.me/BruceSL",
                         ),
                     ],
                     [
