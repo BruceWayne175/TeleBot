@@ -80,7 +80,7 @@ async def amireallyalive(alive):
         tele += (
             f"{telemoji} **My Pro Owner** : [{DEFAULTUSER}](tg://user?id={myid})\n\n"
         )
-        tele += "    [✨ GitHub Repository ✨](https://github.com/BruceWayne175/TeleBot)"
+        tele += "    [✨ Plz Don't Click 😂 ✨](https://t.me/BruceSL)"
         await alive.get_chat()
         await alive.delete()
         """ For .alive command, check if the bot is running.  """
@@ -107,7 +107,7 @@ async def amireallyalive(alive):
             f"{telemoji} **TeleBot Uptime**: `{uptime}`\n"
             f"{telemoji} **Database Status**: `All OK 😜👌`\n"
             f"{telemoji} **My Pro Owner** : [{DEFAULTUSER}](tg://user?id={myid})\n\n"
-            "    [✨ GitHub Repository ✨](https://github.com/BruceWayne175/TeleBot)",
+            "    [✨ Plz Don't Click 😂 ✨](https://t.me/BruceSL)",
             link_preview=False,
         )
         await borg.send_file(alive.chat_id, file=sticker)
