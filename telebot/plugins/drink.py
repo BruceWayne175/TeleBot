@@ -1,5 +1,5 @@
 from ..utils import admin_cmd
-@borg.on(admin_cmd(pattern="sax", outgoing=True))
+@borg.on(admin_cmd(pattern="drink", outgoing=True))
 async def _(event):
     a = await bot.get_me()
     phune = a.phone
